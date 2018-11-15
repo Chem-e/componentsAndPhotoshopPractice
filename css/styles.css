@@ -1,7 +1,127 @@
-.card-group {
-    width: 20rem;
+@font-face {
+    font-family: "AsapCondensed-Regular";
+    src: url('../fonts/AsapCondensed-Regular.ttf') format('truetype');
 }
 
-.card-body {
-    background: #6e6e6e
+.card {
+    width: 20rem;
+    font-family: 'AsapCondensed-Regular';
+}
+
+.div1-body {
+    background: #6e6e6e;
+    display: flex;
+    padding: 0px 15px 0px 12px;
+    color: white;
+}
+
+.vid {
+    opacity: 0.5;
+}
+
+.div1-body>.playbar {
+    flex: 5;
+    height: 4px;
+    border-radius: 100px;
+    background: white;
+    margin: 20px 10px;
+}
+
+.played-vid {
+    width: 60%;
+    background: #8cdaea;
+    height: 100%;
+    border-radius: 1000px;
+}
+
+.replay {
+    height: 50px;
+    padding-right: 13px;
+    border-right: 1px solid #666666;
+    padding-top: 13px;
+}
+
+.volume {
+    height: 50px;
+    padding-left: 16px;
+    border-left: 1px solid #666666;
+    padding-top: 13px;
+}
+
+.div2 {
+    width: 4rem;
+}
+
+.list-group-item {
+    height: 4rem;
+}
+
+.list-group li:hover {
+    background-color: #8cdaea;
+    color: white;
+    cursor: pointer;
+}
+
+.div3 {
+    padding-right: 15px;
+}
+
+.list-group {
+    font-family: 'AsapCondensed-Regular';
+}
+
+
+/* div 6 */
+
+input:focus {
+    outline: none !important;
+}
+
+.submit {
+    width: 100%;
+    margin: 5px 0px 9px 0px;
+    background: #8cdaea;
+    border-color: #8cdaea;
+}
+
+.underline {
+    padding-left: 25%;
+    color: #d7d3cf;
+    font-size: 14px;
+}
+
+.footer {
+    background: #666666;
+    height: 50px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    padding-top: 12px;
+    opacity: 0.9;
+    border: 1px solid #666666;
+}
+
+.div6-input1 {
+    margin-bottom: 1.5rem!important;
+    border: 1px solid #6c6c6c;
+    border-radius: 3px;
+}
+
+.div6-input2 {
+    margin-bottom: 1.5rem!important;
+    border: 1px solid #d7d3cf;
+    border-radius: 3px;
+}
+
+.input-group-text {
+    border: none;
+    background: white;
+}
+
+.div6 {
+    padding: 20px 0px 20px 0px;
+}
+
+.form-control {
+    border: 0;
 }
