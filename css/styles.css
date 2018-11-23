@@ -18,6 +18,7 @@
 
 .vid {
     opacity: 0.5;
+    width: 100%;
 }
 
 .div1-body>.playbar {
@@ -59,6 +60,37 @@
     padding: 11px 2px;
 }
 
+.weather-image {
+    width: 130px;
+    height: 130px;
+    color: white;
+    margin: 0px 4px 13px 0px;
+}
+
+.main-weather-icon {
+    background: #8cdaea;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    padding: 21px 21px 32px 21px;
+    font-family: 'AsapCondensed-Regular';
+}
+
+.column {
+    color: #d7d3cf;
+    font-family: 'AsapCondensed-Regular';
+    margin-left: 40px;
+}
+
+.column1 {
+    color: #6c6c6c;
+    margin-left: 10px;
+}
+
+.weather-card-body {
+    display: flex;
+}
+
 .list-group-item {
     height: 4rem;
 }
@@ -67,6 +99,22 @@
     background-color: #8cdaea;
     color: white;
     cursor: pointer;
+}
+
+.map-marker {
+    border-left: 1px solid #666666;
+    padding: 14px 20px 10px 17px;
+}
+
+.map-card-body {
+    background: #6c6c6c;
+    color: white;
+    font-size: 16px;
+    padding: 0px;
+}
+
+.location-name {
+    padding: 13px 10px 14px 23px;
 }
 
 .div3-icon {
@@ -241,6 +289,10 @@ u {
 .heart:hover,
 .music:hover {
     background: #84d3e3;
+}
+
+.embed-responsive-item {
+    height: 275px;
 }
 
 ::-webkit-input-placeholder {
