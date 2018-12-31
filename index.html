@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Repair and Refactor</title>
+    <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -14,168 +15,185 @@
 <body>
 
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card div1" style="width:21rem;">
+        <div class="row  justify-content-around">
+
+            <!-- 1st column -->
+            <div class="col-lg-5 col-sm-6 col-md-12">
+
+                <!-- card 1 -->
+                <div class="card my-5">
                     <video loop="loop" class="vid">
-                                    <source src="videos/movie.mp4" type="video/mp4">
-                                  </video>
-                    <div class="card-body div1-body">
+                        <source src="videos/movie.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body vid-card-body d-flex background-grey color-white">
                         <div class="replay">
                             <i class="fas fa-sync-alt  fa-lg"></i>
                         </div>
-                        <div class="playbar">
-                            <div class="played-vid"></div>
+                        <div class="playbar background-white">
+                            <div class="played-vid background-light-blue "></div>
                         </div>
                         <div class="volume">
                             <i class="fas fa-volume-down  fa-lg"></i>
                         </div>
                     </div>
                 </div>
-                <!-- /// -->
 
-                <div class="d-flex">
+                <!-- card 2 & 3 -->
 
-                    <!-- div 2 -->
-                    <div class="card div2">
+                <div class="row mx-1">
+
+                    <!-- card 2 -->
+                    <div class="card social-media-icons-card  col-2 my-5 font-family-asapcondensed-regular">
                         <ul class="d-flex flex-column list-group list-group-flush">
                             <li class="list-group-item justify-content-center align-items-center">
-                                <i class="fab div2-icon fa-facebook-f fa-lg"></i>
+                                <i class="fab social-media-icons color-grey fa-facebook-f fa-lg"></i>
                             </li>
                             <li class="list-group-item justify-content-center align-items-center">
-                                <i class="fab div2-icon fa-lg fa-twitter"></i>
+                                <i class="fab social-media-icons color-grey fa-lg fa-twitter"></i>
                             </li>
                             <li class="list-group-item justify-content-center align-items-center">
-                                <i class="fab div2-icon fa-lg fa-google-plus-g"></i>
+                                <i class="fab social-media-icons color-grey fa-lg fa-google-plus-g"></i>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- div 3 -->
-                    <div class="card" style="width: 18rem;">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item div3">
-                                <i class="fas div3-icon fa-lg fa-pencil-alt"></i> Edit Post
+                    <!-- card 3 -->
+                    <div class="card offset-1 p-0 my-5 col-8 editing-card color-grey">
+                        <ul class="list-group list-group-flush ">
+                            <li class="list-group-item  ">
+                                <i class="fas editing-card-icon  fa-lg fa-pencil-alt "></i> Edit Post
                             </li>
-                            <li class="list-group-item div3">
-                                <i class="fas div3-icon fa-lg fa-times"></i> &nbsp; Remove Post
+                            <li class="list-group-item  ">
+                                <i class="fas editing-card-icon  fa-lg fa-times "></i> &nbsp; Remove Post
                             </li>
-                            <li class="list-group-item div3">
-                                <i class="fas div3-icon fa-lg fa-check"></i> Save Post
+                            <li class="list-group-item  ">
+                                <i class="fas editing-card-icon  fa-lg fa-check "></i> Save Post
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- div 4 -->
-                <div class="card" style="width: 21rem;">
-                    <div class="main-weather-icon">
-                        <img class="weather-image" alt="Card image cap" src="images/weather.png"> <br><b>13
-                <sup>o</sup>C</b> &nbsp; Marseille
-                    </div>
-                    <div class="card-body weather-card-body">
-                        <div class="column1 column">
+                <!-- card 4 -->
+                <div class="card my-5 font-family-asapcondensed-regular ">
+                    <figure class="weather-main-icon color-white background-light-blue">
+                        <img class="weather-image color-white" alt="Card image cap" src="images/weather.png">
+                        <figcaption>
+                            <b>13<sup>o</sup>C</b> &nbsp; Marseille
+                        </figcaption>
+                    </figure>
+                    <div class="card-body background-white d-flex justify-content-around ">
+                        <div class="color-dark-grey  ">
                             <h4>Mon</h4>
                             <i class="fas fa-2x fa-cloud-sun-rain"></i>
                             <p>&nbsp; &nbsp;13<sup>o</sup>C</p>
                         </div>
-                        <div class="column2 column">
+                        <div class="color-light-grey  ">
                             <h4>Tue</h4>
                             <i class="fas fa-2x fa-cloud-showers-heavy"></i>
-                            <p>&nbsp; &nbsp;10<sup>o</sup>C</p>
+                            <p>&nbsp;10<sup>o</sup>C</p>
                         </div>
-                        <div class="column3 column">
+                        <div class="color-light-grey  ">
                             <h4>Wed</h4>
                             <i class="fas fa-2x fa-cloud-sun"></i>
                             <p>&nbsp; &nbsp;17<sup>o</sup>C</p>
                         </div>
-                        <div class="column4 column">
+                        <div class="color-light-grey   ">
                             <h4>Mon</h4>
                             <i class="far fa-2x fa-sun"></i>
                             <p>&nbsp; &nbsp;22<sup>o</sup>C</p>
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="col">
 
-                <!-- div 5 -->
-                <div class="card" style="width: 21rem;">
-                    <div class="div4-contact">
-                        <span>
-                    <img class="contact-image" alt="Card image cap" src="images/vid-bg.jpg"  >
-                    <mark class="mark">18</mark>
-                </span>
-                        <div class="div4-contact-details">
-                            <h4 class="div4-contact-name">
+            <!-- 2nd column -->
+
+            <div class="col-lg-5 col-sm-6  col-md-12 ">
+                <!-- card 5 -->
+                <div class="card my-5 background-white font-family-asapcondensed-regular">
+                    <div class="product-designer-contact ">
+                        <figure>
+                            <img class="product-designer-contact-image " alt="Card image cap " src="images/vid-bg.jpg ">
+                            <mark class="notification  background-red color-white ">
+                                18
+                            </mark>
+                        </figure>
+                        <div class="product-designer-contact-details ">
+                            <h4 class="product-designer-contact-name ">
                                 <b>Anne</b> Thai
                             </h4>
-                            <p class="product-designer">Product Designer</p>
-                            <a class="link" href="#">
-                                <i class="fas fa-link"></i>&nbsp; &nbsp; &nbsp; <u>http://annethai.com/</u>
+                            <p class="product-designer ">Product Designer</p>
+                            <a class="link " href="# ">
+                                <i class="fas fa-link "></i>&nbsp; &nbsp; &nbsp; <u>http://annethai.com/</u>
                             </a>
                         </div>
                     </div>
-                    <div class="card-body div4-body d-flex bd-highlight">
-                        <div class="clock p-2 flex-fill bd-highlight">
-                            <i class=" far fa-clock"></i>
+                    <div class="card-body product-designer-body background-grey d-flex bd-highlight ">
+                        <div class="clock  color-white  d-flex justify-content-center py-3 flex-fill bd-highlight ">
+                            <i class=" far fa-clock "></i>
                         </div>
-                        <div class="heart  p-2 flex-fill bd-highlight">
-                            <i class="far  fa-heart"></i>
+                        <div class="heart  color-white  d-flex justify-content-center py-3 flex-fill bd-highlight ">
+                            <i class="far fa-heart "></i>
                         </div>
-                        <div class="music  p-2 flex-fill bd-highlight">
+                        <div class="music  color-white  d-flex justify-content-center py-3 flex-fill bd-highlight ">
                             <i class="fas fa-music "></i>
                         </div>
                     </div>
                 </div>
 
-                <!-- div 6 -->
-                <div class="card " style="width:21rem;">
-                    <div class="card-body div6 ">
-                        <form class="div6-input">
+                <!-- card 6 -->
+                <div class="card my-5 background-white font-family-asapcondensed-regular">
+                    <div class="card-body login-card">
+                        <form>
                             <div class="col-auto">
-                                <div class="input-group mb-2  div6-input1">
-                                    <div class="input-group-prepend  ">
-                                        <div class="input-group-text ">
-                                            <i class="far fa-user"></i>
+                                <div class="input-group mb-2 user-name">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="far fa-user user-icon"></i>
                                         </div>
                                     </div>
-                                    <input class="form-control form-control-lg" type="text">
+                                    <input class="form-control form-inputs form-control-lg" type="text">
                                 </div>
                             </div>
-                            <div class="col-auto form-feilds">
-                                <div class="input-group mb-2 div6-input2 ">
-                                    <div class="input-group-prepend ">
+                            <div class="col-auto form-feild">
+                                <div class="input-group mb-2 password">
+                                    <div class="input-group-prepend">
                                         <div class="input-group-text">
                                             <i class="fas fa-lock"></i>
                                         </div>
                                     </div>
-                                    <input class="form-control form-control-lg" type="text" placeholder="password">
+                                    <input class="form-control form-inputs form-control-lg " type="text " placeholder="password ">
                                 </div>
-                                <button type="submit" class="btn submit btn-primary">SUBMIT</button>
-                                <u class="underline">Forgot your password?</u>
+                                <button type="submit " class="btn submit btn-primary background-light-blue ">
+                                    SUBMIT
+                                </button>
+                                <u class="forget-password-link ">
+                                    Forgot your password?
+                                </u>
                             </div>
                         </form>
                     </div>
-                    <div class="footer"> Login with Google+</div>
+                    <div class="login-card-footer">
+                        Login with Google+
+                    </div>
                 </div>
 
-                <!-- div 7 -->
-                <div class="card" style="width: 21rem;">
-                    <iframe class="map embed-responsive-item " src="https://maps.google.com/maps?&hl=en&q=Malet%20St%2C%20London%20WC1E%207HU%2C%20United%20Kingdom+(Your%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed
-              "></iframe>
-                    <div class="card-body d-flex justify-content-between map-card-body">
-                        <span class="location-name"> <b>Lyon</b>, France</span>
+                <!-- card 7 -->
+                <div class="card my-5 background-white font-family-asapcondensed-regular">
+                    <iframe class="map embed-responsive-item " src="https://maps.google.com/maps?&hl=en&q=Malet%20St%2C%20London%20WC1E%207HU%2C%20United%20Kingdom+(Your%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed">
+                    </iframe>
+                    <div class="card-body d-flex justify-content-between color-white background-grey map-card-body">
+                        <div class="location-name">
+                            <b>Lyon</b>, France
+                        </div>
                         <div class="map-marker">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
 </body>
-
-</html>

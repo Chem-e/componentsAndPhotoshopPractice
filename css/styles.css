@@ -7,17 +7,44 @@ body {
     background: #faf7f5;
 }
 
-.card {
-    width: 20rem;
+.font-family-asapcondensed-regular {
     font-family: 'AsapCondensed-Regular';
-    margin: 32px;
 }
 
-.div1-body {
+.background-grey {
     background: #6e6e6e;
-    display: flex;
-    padding: 0px 15px 0px 12px;
+}
+
+.background-light-blue {
+    background: #8cdaea;
+}
+
+.background-white {
+    background: white;
+}
+
+.background-red {
+    background-color: #ff5d79;
+}
+
+.color-white {
     color: white;
+}
+
+.color-grey {
+    color: #6e6e6e;
+}
+
+.color-light-grey {
+    color: #d7d3cf;
+}
+
+.color-dark-grey {
+    color: #6c6c6c;
+}
+
+.vid-card-body {
+    padding: 0px 15px 0px 12px;
 }
 
 .vid {
@@ -25,23 +52,20 @@ body {
     width: 100%;
 }
 
-.div1-body>.playbar {
+.vid-card-body>.playbar {
     flex: 5;
     height: 4px;
     border-radius: 100px;
-    background: white;
     margin: 20px 10px;
 }
 
 .played-vid {
     width: 60%;
-    background: #8cdaea;
     height: 100%;
     border-radius: 1000px;
 }
 
 .replay {
-    height: 50px;
     padding-right: 13px;
     border-right: 1px solid #666666;
     padding-top: 13px;
@@ -54,49 +78,18 @@ body {
     padding-top: 13px;
 }
 
-.div2 {
-    width: 4rem;
+.social-media-icons-card {
     border-radius: 0px;
     margin-top: 36px;
+    padding: 0px;
 }
 
-.div2-icon {
-    padding: 11px 2px;
+.social-media-icons {
+    padding: 11px 6px;
 }
 
-.weather-image {
-    width: 130px;
-    height: 130px;
-    color: white;
-    margin: 0px 4px 13px 0px;
-}
-
-.main-weather-icon {
-    background: #8cdaea;
-    text-align: center;
-    color: white;
-    font-size: 17px;
-    padding: 21px 21px 32px 21px;
-    font-family: 'AsapCondensed-Regular';
-}
-
-.column {
-    color: #d7d3cf;
-    font-family: 'AsapCondensed-Regular';
-    margin-left: 40px;
-}
-
-.column1 {
-    color: #6c6c6c;
-    margin-left: 10px;
-}
-
-.weather-card-body {
-    display: flex;
-}
-
-.list-group-item {
-    height: 4rem;
+.editing-card-icon {
+    padding: 13px 13px 9px 2px;
 }
 
 .list-group li:hover {
@@ -105,64 +98,100 @@ body {
     cursor: pointer;
 }
 
-.map-marker {
-    border-left: 1px solid #666666;
-    padding: 14px 20px 10px 17px;
+.weather-image {
+    width: 130px;
+    height: 130px;
+    margin: 0px 4px 13px 0px;
 }
 
-.map-card-body {
-    background: #6c6c6c;
-    color: white;
-    font-size: 16px;
+.weather-main-icon {
+    text-align: center;
+    font-size: 17px;
+    padding: 21px 21px 32px 21px;
+}
+
+.notification {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 23px;
+    left: 94px;
+    font-size: 11px;
+    padding-left: 4px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.fa-link,
+.link {
+    color: #c8c7c4;
+    font-size: 14px;
+}
+
+.product-designer {
+    color: #a19e9c;
+    margin-bottom: 6px;
+}
+
+.product-designer-contact-image {
+    border-radius: 100px;
+    margin: 25px 20px 20px 24px;
+    width: 100px;
+    height: 100px;
+}
+
+.product-designer-contact-name {
+    margin-bottom: 2px;
+}
+
+.product-designer-contact-details {
+    margin: 35px 20px 20px 20px;
+}
+
+.product-designer-body {
     padding: 0px;
 }
 
-.location-name {
-    padding: 13px 10px 14px 23px;
+.product-designer-contact {
+    display: flex;
+    margin-bottom: 8px;
 }
 
-.div3-icon {
-    padding-right: 15px;
+.clock,
+.heart {
+    border-right: 1px solid #666666;
 }
 
-.div3 {
-    padding-top: 20px;
+.clock:hover,
+.heart:hover,
+.music:hover {
+    background: #84d3e3;
 }
 
-.list-group {
-    font-family: 'AsapCondensed-Regular';
+.login-card {
+    padding: 20px 0px 20px 0px;
 }
 
-
-/* div 6 */
-
-input:focus {
-    outline: none !important;
+.form-feild {
+    text-align: center;
 }
 
 .submit {
     width: 100%;
     margin: 5px 0px 9px 0px;
-    background: #84d3e3;
     border-color: #84d3e3;
     padding: 12px;
 }
 
-.underline {
+.forget-password-link {
     color: #d7d3cf;
     font-size: 14px;
 }
 
-.map {
-    width: 100%;
-    border: none;
-}
-
-.form-feilds {
-    text-align: center;
-}
-
-.footer {
+.login-card-footer {
     background: #666666;
     height: 50px;
     text-align: center;
@@ -173,20 +202,20 @@ input:focus {
     border: 1px solid #666666;
 }
 
-.div6-input1 {
+.user-name {
     margin-bottom: 1.5rem!important;
     border: 1px solid #6c6c6c;
     border-radius: 3px;
     margin-top: 7px;
 }
 
-.fa-user {
+.user-icon {
     color: #969089;
     border-right: 1px solid #969089;
     padding: 2px 27px 0px 6px;
 }
 
-.div6-input2 {
+.password {
     margin-bottom: 1.5rem!important;
     border: 1px solid #d7d3cf;
     border-radius: 3px;
@@ -197,106 +226,27 @@ input:focus {
     background: white;
 }
 
-.div6 {
-    padding: 20px 0px 20px 0px;
-}
-
-.form-control {
+.form-inputs {
     border: 0;
 }
 
-.mark {
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    /* border: 2px solid #FFF; */
-    width: 23px;
-    height: 23px;
-    background-color: #ff5d79;
-    position: absolute;
-    top: 23px;
-    left: 94px;
-    font-size: 11px;
-    padding-left: 4px;
-    line-height: 18px;
-    font-family: 'AsapCondensed-Regular';
-    font-weight: 400;
-    color: #FFF;
+.map {
+    width: 100%;
+    border: none;
 }
 
-.fa-link,
-u {
-    color: #c8c7c4;
-    /* font-family: 'AsapCondensed-Regular'; */
-}
-
-.product-designer {
-    color: #a19e9c;
-    font-family: 'AsapCondensed-Regular';
-    margin-bottom: 6px;
-}
-
-.div2 {
-    width: 4rem;
-}
-
-.contact-image {
-    border-radius: 100px;
-    margin: 25px 20px 20px 24px;
-    width: 100px;
-    height: 100px;
-}
-
-.link {
-    font-size: 14px;
-}
-
-.div4-contact-name {
-    font-family: 'AsapCondensed-Regular';
-    margin-bottom: 2px;
-}
-
-.div4-contact-details {
-    margin: 35px 20px 20px 20px;
-}
-
-.div4-body {
-    padding: 0px;
-    background: #6e6e6e;
-}
-
-.div4-contact {
-    display: flex;
-    margin-bottom: 8px;
-}
-
-.fa-clock,
-.fa-heart,
-.fa-music {
-    color: white
-}
-
-.list-group-item {
-    color: #6e6e6e;
-}
-
-.clock,
-.heart,
-.music {
+.map-marker {
     border-left: 1px solid #666666;
-    opacity: 0.9;
-    padding: 5px;
-    padding: 15px 0px 15px 57px !important;
+    padding: 14px 20px 10px 17px;
 }
 
-.fa-lock {
-    color: #d7d3cf;
+.map-card-body {
+    font-size: 16px;
+    padding: 0px;
 }
 
-.clock:hover,
-.heart:hover,
-.music:hover {
-    background: #84d3e3;
+.location-name {
+    padding: 13px 10px 14px 23px;
 }
 
 .embed-responsive-item {
